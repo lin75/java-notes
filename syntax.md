@@ -90,6 +90,8 @@ final float PI = 3.14F;
 short x = 1;
 int y = x+2; // int + short: 
 int x = (int)1.1;
+String x = "1";
+Integer.parseInt(x); // takes a string and returns a int
 
 
 
