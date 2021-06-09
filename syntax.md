@@ -89,6 +89,9 @@ public class Main{ // main class, class (PascalNamingConvention)
 final float PI = 3.14F;
 short x = 1;
 int y = x+2; // int + short: 
+int x = (int)1.1;
+
+
 
  
 ```
