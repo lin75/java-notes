@@ -26,7 +26,7 @@ $ java com.<packagename>.Main  //look for Main.class
 ---
   
 # Data Types
-### Primitive
+### Primitive types(total of 8)
 - for storing simple values
 - byte: 1 byte [-128, 127]
 - int: 4 bytes [-2B, 2B] **(use _ to make it readable)**
@@ -37,19 +37,58 @@ $ java com.<packagename>.Main  //look for Main.class
   - ``float price= 10.99F;``
 - double: 8 bytes
 - boolean: 1 byte
-### Reference (non-primitive)
+### Reference types (non-primitive)
 - for storing complex objects
+- Date (import java.util.Date;)
+  - ``Date now = new Date();``
+- Point (import java.awt.*;)
+  - **point1 and point2 are referencing the exact same point object in memory**
+  ```java
+    Point point1 = new Point(x:1, y:1);
+    Point point2 = point1;
+    point1.x = 2; // update value
+  ```
+- **String is also Reference type**
+  - **String is IMMUTABLE, it will always create a new String object and return it**
+  ```java
+    String message = "Hello World"; 
+    message.endsWith("!!"); // check if message ends with "!!"
+    message.startsWith("!!");
+    message.length();
+    message.indexOf("H"); // first index of first 'H', if not existed return -1
+  
+    // methods return new string object
+    message.replace("!", "*"); // message.replace(targe, replacement); 
+    message.toLowerCase();
+    message.trim(); // remove extra white space in the beginning or the end of the string
+  ```
+- **int []** && **Arrays**
+  ```java
+    int [] numbers = new int[5];
+    numbers[0]=1;
+    System.out.println(Arrays.toString(numbers)); // printing int []
+    Arrays.sort(numbers); // sort the array
+    int [] numbers2 = {2, 3, 4};
+  ```
+- multi-dimensional array
+  ```java
+    int[][] numbers = new int[2][3];
+    System.out.println(Arrays.deepToString(numbers)); // printing int [][]
+  ```
   
 # Code
 ```java
 public class Main{ // main class, class (PascalNamingConvention)
   
-  public static void main(){ // main function, function (camelNamingConvention)
+  public static void main(String[] args){ // main function, function (camelNamingConvention)
   
   }
 }
 ```
 ```java
-System.out.println(" "); // print
+final float PI = 3.14F;
+short x = 1;
+int y = x+2; // int + short: 
 
+ 
 ```
