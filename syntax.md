@@ -92,6 +92,20 @@ int y = x+2; // int + short:
 int x = (int)1.1;
 String x = "1";
 Integer.parseInt(x); // takes a string and returns a int
+String x = "1.1";
+Double.ParseDouble(x);
+```
+### Math class
+```java
+Math.round(1.1F); // return a long 1, unless you add (int)in front of it
+Math.ceil(1.1F); // return double of 2.0
+(int)Math.ceil(1.1F); // 2 
+Math.max(1, 2);
+Math.min(1,2);
+Math.random(); // return a double between 0 and 1
+Math.round(Math.random() * 100) ; // between 0 to 100
+(int)(Math.random()*100); //between 0 to 100  
+```
 
 
 
