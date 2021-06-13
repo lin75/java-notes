@@ -85,6 +85,7 @@ public class Main{ // main class, class (PascalNamingConvention)
   }
 }
 ```
+### Casting
 ```java
 final float PI = 3.14F;
 short x = 1;
@@ -106,8 +107,50 @@ Math.random(); // return a double between 0 and 1
 Math.round(Math.random() * 100) ; // between 0 to 100
 (int)(Math.random()*100); //between 0 to 100  
 ```
+### format numbers
+```java
+//ERROR NumberFormat currency =  new NumberFormat() //NumberFormat is abstract class
+NumberFormat currency = NumberFormat.getCurrencyInstance(); //returns numberformat object
+String currencyResult = current.format(1234567.891);  //will convert number to currency format
+System.out.println(currencyResult); // $1,234,567.89
+  
+NumberFormat percentage = NumberFortmat.getPercentInstance();
 
+String result = NumberFormat.getPercentage().format(0.1); // 10% in string
+```
 
-
- 
+### Read input
+```java
+Scanner scanner = new Scanner(System.in); // read from terminal
+byte age = scanner.nextByte(); // read next Byte
+String str = scanner.next(); // read string
+String line = scanner.nextLine(); // read whole line
+String line2 = scanner.nextLine().trim(); // read whole line and remove extra space in the front or in the end
+```
+  
+## Control Flow 
+### Ternary Operator
+```java
+  int income = 120_000;
+  String className= income >100_000 ? "First" : "Economy";
+```
+### Switch statement
+```java
+  String role = "admin";
+  switch(role){
+    case "admin":
+      // sth
+      breal;
+    case "moderator":
+      // sth
+      break;
+    default:
+      // sth
+  }
+```
+### For each loop
+```java
+  String [] fruits = {"Apple", "Mango", "Orange");
+  for(String fruit:fruits){
+  }
 ```
