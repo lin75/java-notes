@@ -17,7 +17,7 @@ PriorityQueue<Integer> maxheap = new PriorityQueue<>((a, b)->{ // 4 3 2 1
 });
 
 minheap.peek();
-minheap.pop(); // also return the top element
+minheap.poll(); // also return the top element 
 
 minheap.add(2);
 ```
