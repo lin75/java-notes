@@ -28,3 +28,29 @@ int x = 1;
 int y = 2;
 double res = ( x+ 0.0 + y )/2;
 ```
+
+### HashMap
+```java
+public boolean isIsomorphic(String s, String t) {
+  if(s.length()!=t.length()) return false;
+  Map<Character, Character> mapping_map = new HashMap<Character, Character> ();
+  for(int i = 0; i <s.length();i++){
+      if(!mapping_map.containsKey(s.charAt(i)))
+          mapping_map.put(s.charAt(i), t.charAt(i));
+      else{
+          if(mapping_map.get(s.charAt(i))!= t.charAt(i))
+             return false;
+      }
+  }
+  int [] arr = new int[266];
+  for(int i = 0; i <t.length();i++){
+      int value = s.charAt(i);
+      int value2 = t.charAt(i);
+      if(arr[value2]==0) arr[value2] = value+1;
+      else{
+          if( arr[value2] != value+1) return false;
+      }
+  }
+   return true;
+}
+```
