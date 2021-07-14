@@ -54,3 +54,33 @@ public boolean isIsomorphic(String s, String t) {
    return true;
 }
 ```
+### Array
+```java
+int rank[] = new int[26];
+Arrays.fill(rank, -1);
+```
+
+### Sort
+```java
+int rank[] = new int[26];
+Arrays.fill(rank, -1);
+for(int i = 0; i < order.length(); i++){
+    rank[order.charAt(i) - 'a'] = i;
+}
+List<Character> A = new ArrayList<>();
+for(char c : s.toCharArray()){
+    A.add(c);
+}
+
+Collections.sort(A, (a, b) -> { //sort based on another array
+    return rank[a - 'a'] - rank[b - 'a'];
+});
+```
+### String builder to String
+```java
+StringBuilder str = new StringBuilder();
+for(char c : A){
+    str.append(c);
+}
+return str.toString();
+```
