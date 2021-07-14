@@ -62,17 +62,11 @@ Arrays.fill(rank, -1);
 
 ### Sort
 ```java
-int rank[] = new int[26];
-Arrays.fill(rank, -1);
-for(int i = 0; i < order.length(); i++){
-    rank[order.charAt(i) - 'a'] = i;
-}
 List<Character> A = new ArrayList<>();
 for(char c : s.toCharArray()){
     A.add(c);
 }
-
-Collections.sort(A, (a, b) -> { //sort based on another array
+Collections.sort(A, (a, b) -> { // list A 
     return rank[a - 'a'] - rank[b - 'a'];
 });
 ```
@@ -83,4 +77,10 @@ for(char c : A){
     str.append(c);
 }
 return str.toString();
+```
+#### traverse String (use ``.toCharArray()``)
+```java
+for(char c : s.toCharArray()){
+    A.add(c);
+}
 ```
