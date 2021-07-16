@@ -58,6 +58,7 @@ public boolean isIsomorphic(String s, String t) {
 ```java
 int rank[] = new int[26];
 Arrays.fill(rank, -1);
+Arrays.sort(rank);
 ```
 
 ### Sort
