@@ -73,6 +73,13 @@ int [][]ar = new int [3][4];
 for (int[] row : ar)
     Arrays.fill(row, 10);
 ```
+### Array of ArrayList
+```java
+ArrayList<Integer> [] graph = new ArrayList[A.length];
+for (int i = 0; i < A.length; i++) {
+    graph[i] = new ArrayList<Integer>();
+}
+```
 
 ### Sort
 ```java
