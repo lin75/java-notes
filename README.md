@@ -104,7 +104,13 @@ for(char c : s.toCharArray()){
  Queue<Integer> q = new LinkedList<>();
  q.add(i);
  // To remove the head of queue.
+ 
+ // Removing Elements: In order to remove an element from a queue, we can use the remove() method. 
+ // If there are multiple such objects, then the first occurrence of the object is removed. 
+ // Apart from that, poll() method is also used to remove the head and return it. 
  int removedele = q.remove();
+
+ pq.poll();
  // To view the head of queue
  int head = q.peek();
  int size = q.size();
