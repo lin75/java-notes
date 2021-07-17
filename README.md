@@ -67,6 +67,11 @@ int rank[] = new int[26];
 Arrays.fill(rank, -1);
 Arrays.sort(rank);
 return new int[] {-1,-1};
+
+int [][]ar = new int [3][4];
+// Fill each row with 10. 
+for (int[] row : ar)
+    Arrays.fill(row, 10);
 ```
 
 ### Sort
