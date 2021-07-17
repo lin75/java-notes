@@ -54,11 +54,19 @@ public boolean isIsomorphic(String s, String t) {
    return true;
 }
 ```
+
+### HashSet
+```java
+Set<Integer> hash_set = new HashSet<Integer>();
+hash_set.add(x);
+hash_set.contains(x);
+```
 ### Array
 ```java
 int rank[] = new int[26];
 Arrays.fill(rank, -1);
 Arrays.sort(rank);
+return new int[] {-1,-1};
 ```
 
 ### Sort
