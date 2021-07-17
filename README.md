@@ -98,3 +98,25 @@ for(char c : s.toCharArray()){
     A.add(c);
 }
 ```
+
+### Queue
+```java
+ Queue<Integer> q = new LinkedList<>();
+ q.add(i);
+ // To remove the head of queue.
+ int removedele = q.remove();
+ // To view the head of queue
+ int head = q.peek();
+ int size = q.size();
+```
+### Priority Queue
+```java
+PriorityQueue<E> pq = new PriorityQueue<E>();
+System.out.println(pQueue.poll());
+// Printing the top element again
+System.out.println(pQueue.peek());
+
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a); 
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); 
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a)); 
+```
