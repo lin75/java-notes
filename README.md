@@ -133,3 +133,9 @@ PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a);
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); 
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a)); 
 ```
+
+### LinkedList
+```java
+ListNode dummy = new ListNode(0, head);
+ListNode current = head;
+```
