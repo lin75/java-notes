@@ -104,9 +104,9 @@ return str.toString();
 for(char c : s.toCharArray()){
     A.add(c);
 }
-if (sb.charAt(index) == '-') {
-    sb.setCharAt(index, '/');
-}
+StringBuilder strB = new StringBuilder(dominoes);
+strB.charAt(current);
+strB.setCharAt(current[1],'R');
 ```
 
 ### Queue
