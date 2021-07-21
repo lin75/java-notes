@@ -104,6 +104,9 @@ return str.toString();
 for(char c : s.toCharArray()){
     A.add(c);
 }
+if (sb.charAt(index) == '-') {
+    sb.setCharAt(index, '/');
+}
 ```
 
 ### Queue
