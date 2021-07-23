@@ -142,3 +142,9 @@ PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a));
 ListNode dummy = new ListNode(0, head);
 ListNode current = head;
 ```
+### Pair
+```java
+Pair<Integer, String> pair = new Pair<>(1, "One");
+Integer key = pair.getKey();
+String value = pair.getValue();
+```
