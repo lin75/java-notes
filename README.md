@@ -1,5 +1,9 @@
 # java-notes
-
+### MAX, MIN
+```java
+System.out.println(Integer.MIN_VALUE);
+System.out.println(Integer.MAX_VALUE);
+```
 ### List
 ```java
 List<Integer> res = new ArrayList<>();
