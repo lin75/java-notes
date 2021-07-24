@@ -66,6 +66,7 @@ hash_set.contains(x);
 int rank[] = new int[26];
 Arrays.fill(rank, -1);
 Arrays.sort(rank);
+Arrays.sort(arr, Collections.reverseOrder());
 return new int[] {-1,-1};
 
 int [][]ar = new int [3][4];
