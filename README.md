@@ -10,7 +10,21 @@ List<Integer> res = new ArrayList<>();
 res.add(0);
 int sizee = res.size();
 res.get(j); // res[j] in list
+```
+#### list to int[]
+```java
+int [] arr = ...
+List<Integer> res = new ArrayList<>();
+for(int i: arr){
+    res.add(i);
+}
+return res.stream().mapToInt(i->i).toArray(); 
+//or
 
+int[]resArr = new int[arr.size()];
+for(int i = 0; i < arr.size();i++){
+  resArr[i] = res.get(i);
+}
 ```
 ### Heap
 ```java
