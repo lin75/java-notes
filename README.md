@@ -103,7 +103,15 @@ for (int i = 0; i < A.length; i++) {
     graph[i] = new ArrayList<Integer>();
 }
 ```
-
+#### List of Pair
+```java
+List<Pair<Integer, Integer>> directions = new ArrayList<>();
+directions.add( new Pair<Integer, Integer>(-1, 0));
+directions.add( new Pair<Integer, Integer>(1, 0));
+directions.add( new Pair<Integer, Integer>(0, -1));
+directions.add( new Pair<Integer, Integer>(0, 1));
+       
+```
 ### Sort
 ```java
 List<Character> A = new ArrayList<>();
