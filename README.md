@@ -156,6 +156,12 @@ strB.setCharAt(current[1],'R');
  int head = q.peek();
  int size = q.size();
 ```
+#### int[] in queue
+```java
+Queue<int[]> q = new LinkedList<>();
+q.add(new int[]{1, 2});
+
+```
 ### Priority Queue
 ```java
 PriorityQueue<E> pq = new PriorityQueue<E>();
