@@ -112,6 +112,10 @@ directions.add( new Pair<Integer, Integer>(0, -1));
 directions.add( new Pair<Integer, Integer>(0, 1));
        
 ```
+#### 2D Array
+```java
+int [][] dirs = new int[][] { {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
+```
 ### Sort
 ```java
 List<Character> A = new ArrayList<>();
