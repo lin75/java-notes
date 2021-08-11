@@ -73,6 +73,11 @@ public boolean isIsomorphic(String s, String t) {
 }
 ```
 
+```java
+map.put(num, map.getOrDefault(num, 0)+1);
+map.put(num, map.get(num)-1);
+```
+
 ### HashSet
 ```java
 Set<Integer> hash_set = new HashSet<Integer>();
@@ -95,6 +100,13 @@ int [][]ar = new int [3][4];
 // Fill each row with 10. 
 for (int[] row : ar)
     Arrays.fill(row, 10);
+```
+```java
+Integer[] arrI = new Integer[arr.length];
+for(int i = 0; i < arr.length; i++){
+    arrI[i] = arr[i];
+}
+Arrays.sort(arrI, Comparator.comparingInt(Math::abs));
 ```
 ### Array of ArrayList
 ```java
