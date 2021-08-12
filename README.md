@@ -144,6 +144,14 @@ Collections.sort(A, (a, b) -> { // list A
     return rank[a - 'a'] - rank[b - 'a'];
 });
 ```
+#### Sort string
+```java
+ for (String str: strs) {
+    char [] c = str.toCharArray();
+    Arrays.sort(c);
+    String sorted = new String(c);
+}
+```
 ### String builder to String
 ```java
 StringBuilder str = new StringBuilder();
