@@ -1,4 +1,5 @@
 # java-notes
+#### [Pass by value](https://stackoverflow.com/questions/12757841/are-arrays-passed-by-value-or-passed-by-reference-in-java/12757860)
 ### MAX, MIN
 ```java
 System.out.println(Integer.MIN_VALUE);
