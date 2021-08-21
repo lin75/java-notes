@@ -215,6 +215,14 @@ PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a);
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); 
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a)); 
 ```
+```java
+  PriorityQueue<Pair<Integer, Integer>> maxPQ = new PriorityQueue<>(
+    (a,b)-> {
+    if(b.getKey() == a.getKey()) return b.getValue()- a.getValue();
+    return  b.getKey()-a.getKey();
+    }
+); 
+ ```
 
 ### LinkedList
 ```java
