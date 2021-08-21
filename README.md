@@ -73,6 +73,17 @@ public boolean isIsomorphic(String s, String t) {
    return true;
 }
 ```
+```java
+for (Map.Entry mapElement : hm.entrySet()) {
+    String key = (String)mapElement.getKey();
+
+    // Add some bonus marks
+    // to all the students and print it
+    int value = ((int)mapElement.getValue() + 10);
+
+    System.out.println(key + " : " + value);
+    }
+```
 
 ```java
 map.put(num, map.getOrDefault(num, 0)+1);
