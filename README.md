@@ -89,6 +89,10 @@ for (Map.Entry mapElement : hm.entrySet()) {
 map.put(num, map.getOrDefault(num, 0)+1);
 map.put(num, map.get(num)-1);
 ```
+#### Map to List
+```java
+List<Integer> list = new ArrayList<Integer>(map.values());
+```
 
 ### HashSet
 ```java
