@@ -124,6 +124,13 @@ for(int i = 0; i < arr.length; i++){
 }
 Arrays.sort(arrI, Comparator.comparingInt(Math::abs));
 ```
+#### Sorting Array
+```java
+Comparator<Node> comp = (a, b) -> 
+    (a.start==b.start) ? (a.end-b.end):(a.start-b.start);
+
+Arrays.sort(node, comp);
+```
 ### Array of ArrayList
 ```java
 ArrayList<Integer> [] graph = new ArrayList[A.length];
