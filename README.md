@@ -89,9 +89,20 @@ for (Map.Entry mapElement : hm.entrySet()) {
 map.put(num, map.getOrDefault(num, 0)+1);
 map.put(num, map.get(num)-1);
 ```
+
 #### Map to List
 ```java
-List<Integer> list = new ArrayList<Integer>(map.values());
+//Put value and key into list
+List<Integer> listOfValue = new ArrayList<Integer>(map.values());
+List<String> listOfKeys = new ArrayList<String>(map.keySet());
+```
+
+```java
+List<Map.Entry<String, Integer> > list = new LinkedList<Map.Entry<String, Integer>>(map.entrySet());
+//Sort by the value
+Collections.sort(list, (a,b) ->{
+    return b.getValue()-a.getValue();
+});
 ```
 
 ### HashSet
@@ -100,6 +111,7 @@ Set<Integer> hash_set = new HashSet<Integer>();
 hash_set.add(x);
 hash_set.contains(x);
 ```
+
 ### Array
 ```java
 int rank[] = new int[26];
@@ -124,6 +136,7 @@ for(int i = 0; i < arr.length; i++){
 }
 Arrays.sort(arrI, Comparator.comparingInt(Math::abs));
 ```
+
 #### Sorting Array
 ```java
 Comparator<Node> comp = (a, b) -> 
@@ -131,6 +144,7 @@ Comparator<Node> comp = (a, b) ->
 
 Arrays.sort(node, comp);
 ```
+
 ### Array of ArrayList
 ```java
 ArrayList<Integer> [] graph = new ArrayList[A.length];
@@ -138,6 +152,7 @@ for (int i = 0; i < A.length; i++) {
     graph[i] = new ArrayList<Integer>();
 }
 ```
+
 #### List of Pair
 ```java
 List<Pair<Integer, Integer>> directions = new ArrayList<>();
@@ -145,18 +160,20 @@ directions.add( new Pair<Integer, Integer>(-1, 0));
 directions.add( new Pair<Integer, Integer>(1, 0));
 directions.add( new Pair<Integer, Integer>(0, -1));
 directions.add( new Pair<Integer, Integer>(0, 1));
-       
 ```
+
 #### List of List
 ```java
 List<List<Integer>> res =new ArrayList<>();
 List<Integer> tmp = new ArrayList<>();
 res.add(new ArrayList(tmp));
 ```
+
 #### 2D Array
 ```java
 int [][] dirs = new int[][] { {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
 ```
+
 ### Sort
 ```java
 List<Character> A = new ArrayList<>();
@@ -167,6 +184,7 @@ Collections.sort(A, (a, b) -> { // list A
     return rank[a - 'a'] - rank[b - 'a'];
 });
 ```
+
 #### Sort string
 ```java
  for (String str: strs) {
@@ -175,6 +193,7 @@ Collections.sort(A, (a, b) -> { // list A
     String sorted = new String(c);
 }
 ```
+
 ### String builder to String
 ```java
 StringBuilder str = new StringBuilder();
@@ -183,6 +202,7 @@ for(char c : A){
 }
 return str.toString();
 ```
+
 #### traverse String (use ``.toCharArray()``)
 ```java
 for(char c : s.toCharArray()){
@@ -209,12 +229,13 @@ strB.setCharAt(current[1],'R');
  int head = q.peek();
  int size = q.size();
 ```
+
 #### int[] in queue
 ```java
 Queue<int[]> q = new LinkedList<>();
 q.add(new int[]{1, 2});
-
 ```
+
 ### Priority Queue
 ```java
 PriorityQueue<E> pq = new PriorityQueue<E>();
@@ -240,9 +261,19 @@ PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a));
 ListNode dummy = new ListNode(0, head);
 ListNode current = head;
 ```
+
 ### Pair
 ```java
 Pair<Integer, String> pair = new Pair<>(1, "One");
 Integer key = pair.getKey();
 String value = pair.getValue();
+```
+
+## String replace
+```java
+//Keep letter and numbers
+String ns = s.replaceAll("[^a-zA-Z0-9]", "");
+
+//Also keep the space
+String ns = s.replaceAll("[^a-zA-Z0-9\\s]", "");
 ```
