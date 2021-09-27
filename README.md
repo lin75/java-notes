@@ -276,7 +276,6 @@ String ns = s.replaceAll("[^a-zA-Z0-9]", "");
 
 //Also keep the space
 String ns = s.replaceAll("[^a-zA-Z0-9\\s]", "");
-```
 
 //Replace all a to b
 String ns = s.replace("a", "b");
