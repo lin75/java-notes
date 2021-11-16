@@ -27,22 +27,6 @@ for(int i = 0; i < arr.size();i++){
   resArr[i] = res.get(i);
 }
 ```
-### Heap
-```java
-PriorityQueue<Integer> minheap = new PriorityQueue<>(); // 1 2 3 4
-
-PriorityQueue<Integer> maxheap = new PriorityQueue<>((a, b)->{ // 4 3 2 1
-  return b-a; 
-});
-
-//or
-PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->a-b);// 4 3 2 1
-
-minheap.peek();
-minheap.poll(); // also return the top element 
-
-minheap.add(2);
-```
 
 ### int to double
 ```java
@@ -239,16 +223,20 @@ Queue<int[]> q = new LinkedList<>();
 q.add(new int[]{1, 2});
 ```
 
-### Priority Queue
+### Heap / Priority Queue
 ```java
 PriorityQueue<E> pq = new PriorityQueue<E>();
+pq.add(2);
 System.out.println(pQueue.poll());
 // Printing the top element again
 System.out.println(pQueue.peek());
 
-PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b - a); 
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> a - b); // 1 2 3 4
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>(Collections.reverseOrder()); 
 PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a,b) -> b.compareTo(a)); 
+PriorityQueue<Integer> maxPQ = new PriorityQueue<>((a, b)->{ // 4 3 2 1
+  return b-a; 
+});
 ```
 ```java
   PriorityQueue<Pair<Integer, Integer>> maxPQ = new PriorityQueue<>(
