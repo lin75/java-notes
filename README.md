@@ -35,6 +35,9 @@ PriorityQueue<Integer> maxheap = new PriorityQueue<>((a, b)->{ // 4 3 2 1
   return b-a; 
 });
 
+//or
+PriorityQueue<Integer> pq = new PriorityQueue<>((a,b)->a-b);// 4 3 2 1
+
 minheap.peek();
 minheap.poll(); // also return the top element 
 
