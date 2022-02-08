@@ -97,6 +97,8 @@ Collections.sort(list, (a,b) ->{
 Set<Integer> hash_set = new HashSet<Integer>();
 hash_set.add(x);
 hash_set.contains(x);
+//Conver hashset to arraylist
+ArrayList<String> arr = new ArrayList<>(hash_set)
 ```
 
 ### Array
