@@ -74,6 +74,9 @@ for (Map.Entry mapElement : hm.entrySet()) {
 
 ```java
 map.put(num, map.getOrDefault(num, 0)+1);
+//or
+map.putIfAbsent(root, 0);
+
 map.put(num, map.get(num)-1);
 ```
 
