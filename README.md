@@ -26,6 +26,12 @@ int[]resArr = new int[arr.size()];
 for(int i = 0; i < arr.size();i++){
   resArr[i] = res.get(i);
 }
+//or
+
+//for int[][]
+return res.toArray(new int[arr.length][]);
+//for int[]
+return res.toArray(new int[arr.length]);
 ```
 
 ### int to double
