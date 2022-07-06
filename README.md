@@ -272,7 +272,7 @@ Integer key = pair.getKey();
 String value = pair.getValue();
 ```
 
-## String replace
+### String replace
 ```java
 //Keep letter and numbers
 String ns = s.replaceAll("[^a-zA-Z0-9]", "");
@@ -282,4 +282,13 @@ String ns = s.replaceAll("[^a-zA-Z0-9\\s]", "");
 
 //Replace all a to b
 String ns = s.replace("a", "b");
+```
+### Stack
+```java
+//FILO
+Stack<String> stack = new Stack<String>();
+stack.push("something");
+stack.pop();
+// Printing the Stack Elements
+System.out.println(stack);
 ```
